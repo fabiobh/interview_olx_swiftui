@@ -1,0 +1,28 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "hello" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hi"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Olá"
+          }
+        }
+      }
+    },
+    "Hello, world 123" : {
+
+    },
+    "Hello, world!" : {
+
+    }
+  },
+  "version" : "1.0"
+}
