@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @StateObject private var viewModel: OnboardingViewModel
+    
+    init(viewModel: OnboardingViewModel) {
+        
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world 123")
             Text("hello")
         }
         .padding()
