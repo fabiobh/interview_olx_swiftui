@@ -6,15 +6,23 @@
 //
 
 import XCTest
+@testable import EntrevistaOlx
 
 // Testes para a ProfileViewModel
 
 final class ProfileViewModelTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+/*
+    private sut: ProfileViewModel!
+    private mockUserService: MockUserService!
+    
+    override class func setUp() {
+        super.setUp()
+        
+        mockUserService = MockUserService()
+        sut = ProfileViewModel(userService: )
     }
-
+ */
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }

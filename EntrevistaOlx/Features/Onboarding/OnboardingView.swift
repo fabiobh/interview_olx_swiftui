@@ -25,6 +25,8 @@ struct OnboardingView: View {
     }
 }
 
+/*
 #Preview {
-    OnboardingView()
+    OnboardingView(viewModel: <#OnboardingViewModel#>)
 }
+*/

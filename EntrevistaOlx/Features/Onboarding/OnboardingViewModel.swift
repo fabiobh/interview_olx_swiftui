@@ -13,12 +13,12 @@ class OnboardingViewModel: ObservableObject {
     
     private let userService: UserServiceProtocol
     
-    init(userService: userServiceProtocol) {
+    init(userService: UserServiceProtocol) {
         self.userService = userService
     }
     
     func fetchUser() {
         isLoading = true
-        userService.f
+        // userService.f
     }
 }
