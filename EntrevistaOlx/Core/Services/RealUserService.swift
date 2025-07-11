@@ -13,6 +13,7 @@ class RealUserService: UserServiceProtocol {
     
     func fecthUser(id: UUID) async throws -> User {
         print("Get real user - starting search using the API")
+        
         // --- Início da Lógica de Rede Real ---
         // Aqui você construiria a URLRequest para, por exemplo, "https://api.seusite.com/users/\(id)"
         // let url = URL(string: "...")!
@@ -21,7 +22,7 @@ class RealUserService: UserServiceProtocol {
         // return user
         // --- Fim da Lógica de Rede Real ---
         
-        try await Task.sleep(.seconds(2))
+        try await Task.sleep(for: .seconds(2))
         
         print("Usuario real recebido da API")
         
@@ -42,7 +43,7 @@ class RealUserService: UserServiceProtocol {
         // let _ = try await URLSession.shared.data(for: request)
         // --- Fim da Lógica de Rede Real ---
         
-        try await Task.sleep(.seconds(2))
+        try await Task.sleep(for: .seconds(2))
         
         print("Dados atualizados com sucesso na API")
     }

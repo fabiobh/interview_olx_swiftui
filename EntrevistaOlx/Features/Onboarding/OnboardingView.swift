@@ -11,7 +11,7 @@ struct OnboardingView: View {
     @StateObject private var viewModel: OnboardingViewModel
     
     init(viewModel: OnboardingViewModel) {
-        
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {

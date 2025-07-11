@@ -13,7 +13,7 @@ import SwiftUI
 struct EntrevistaOlxApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            OnboardingView(viewModel: OnboardingViewModel(userService: RealUserService()))
         }
     }
 }

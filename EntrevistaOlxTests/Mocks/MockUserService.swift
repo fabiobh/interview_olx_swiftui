@@ -16,7 +16,7 @@ enum TestError: Error {
 
 class MockUserService: UserServiceProtocol {
     var shoudReturnSucess = true
-    let mockUser = User(id: UUID(), name: "Usuário de teste", email: "teste@empresa.com")
+    let mockUser = User(id: 16, name: "Usuário de teste", email: "teste@empresa.com")
     
     func fecthUser(id: UUID) async throws -> User {
         if shoudReturnSucess {
@@ -24,7 +24,7 @@ class MockUserService: UserServiceProtocol {
             return mockUser
         } else {
             print("MOCK: Retornando um erro")
-            return TestError.networkFailed
+            throw TestError.networkFailed
         }
     }
     
